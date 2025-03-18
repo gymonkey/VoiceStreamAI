@@ -23,7 +23,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
 COPY requirements.txt requirements.txt
 
 # Install any needed packages specified in requirements.txt
-RUN pip3 uninstall numpy && pip3 install numpy==1.26.3 && pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt && pip3 uninstall numpy && pip3 install numpy==1.26.3 
 
 # Copy the rest of your application's code
 COPY . .
