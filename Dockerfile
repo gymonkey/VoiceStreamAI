@@ -1,5 +1,5 @@
 # Use an NVIDIA CUDA base image with Python 3
-FROM nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04
+FROM nvidia/cuda:12.3.2-cudnn9-runtime-ubuntu22.04
 
 
 ENV PYTHON_VERSION=3.10
